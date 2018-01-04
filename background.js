@@ -10,6 +10,6 @@ var match_rule = {
 
 chrome.runtime.onInstalled.addListener(function(details) {
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-    chrome.declarativeContent.onPageChanged.addRules([match_rules])
+    chrome.declarativeContent.onPageChanged.addRules([match_rule])
   })
 })

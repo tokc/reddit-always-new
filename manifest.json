@@ -4,8 +4,12 @@
   "name": "Reddit Always New",
   "description": "Always go to /new.",
   "version": "1.0",
-
-  "browser_action": {
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["declarativeContent"],
+  "page_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },

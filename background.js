@@ -1,7 +1,7 @@
 var match_rule = {
   conditions: [
     new chrome.declarativeContent.PageStateMatcher({
-      pageUrl: { hostEquals: 'www.reddit.com, schemes: ['https'] }
+      pageUrl: { hostEquals: 'www.reddit.com', schemes: ['https'] }
     })
   ],
 
